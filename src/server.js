@@ -1,13 +1,18 @@
 import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import Hello from './components/Hello';
 
 const app = express();
 
 app.set('view engine', 'pug');
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
+  const html = ReactDOMServer.renderToString(<Hello />);
   res.render('index', {
     title: 'Maistin',
-    message: 'Welcome to Maistin!'
+    message: 'Welcome to Maistin!',
+    content: html,
   });
 });
 
