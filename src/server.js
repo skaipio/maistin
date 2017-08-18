@@ -8,7 +8,7 @@ const app = express();
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-  const html = ReactDOMServer.renderToString(<Hello />);
+  const html = ReactDOMServer.renderToString(<Hello beerType="Scottish Ales" />);
   res.render('index', {
     title: 'Maistin',
     message: 'Welcome to Maistin!',
