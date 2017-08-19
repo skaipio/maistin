@@ -1,18 +1,19 @@
 import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import Hello from './components/Hello';
+import { getBeers } from './services/beerService';
+import BeerList from './components/BeerList';
 
 const app = express();
 
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-  const html = ReactDOMServer.renderToString(<Hello beerType="Scottish Ales" />);
+  const beerList = ReactDOMServer.renderToString(<BeerList beers={getBeers()} />);
   res.render('index', {
     title: 'Maistin',
     message: 'Welcome to Maistin!',
-    content: html,
+    content: beerList,
   });
 });
 
