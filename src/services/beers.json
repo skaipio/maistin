@@ -1,0 +1,10 @@
+[{
+  "id": 1,
+  "name": "Ginger Ale",
+  "favorite": false
+},
+{
+  "id": 2,
+  "name": "Nutty Stout",
+  "favorite": true
+}]

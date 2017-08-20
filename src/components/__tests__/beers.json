@@ -1,0 +1,20 @@
+[{
+  "id": 1,
+  "name": "Lovely Lager",
+  "favorite": false
+},
+{
+  "id": 2,
+  "name": "Sound Stout",
+  "favorite": true
+},
+{
+  "id": 3,
+  "name": "Pounding Porter",
+  "favorite": false
+},
+{
+  "id": 4,
+  "name": "Awesome Ale",
+  "favorite": true
+}]

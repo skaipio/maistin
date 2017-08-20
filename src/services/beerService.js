@@ -1,6 +1,6 @@
 /* eslint import/prefer-default-export: 0 */
 
-const beers = ['Ginger Ale', 'Nutty Stout'];
+import beers from './beers.json';
 
 export function getBeers() {
   return beers;
