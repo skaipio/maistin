@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/components/App.js',
+  entry: './src/browser.js',
   output: {     // pakollinen!
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')

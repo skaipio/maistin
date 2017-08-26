@@ -5,4 +5,6 @@ html
     h1= message
     div(id="main")
       | !{content}
-    script(src="../dist/bundle.js")    
+    script.
+      const APP_PROPS = !{appProps}
+    script(src="../dist/bundle.js")

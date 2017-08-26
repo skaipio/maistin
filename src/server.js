@@ -12,11 +12,15 @@ const port = 8080;
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-  const beerList = ReactDOMServer.renderToString(<BeerList beers={getBeers()} />);
+  const beers = getBeers();
+  const beerList = ReactDOMServer.renderToString(<BeerList beers={beers} />);
   res.render('index', {
     title: 'Maistin',
     message: 'Welcome to Maistin!',
     content: beerList,
+    appProps: JSON.stringify({
+      beers: beers,
+    })
   });
 });
 
