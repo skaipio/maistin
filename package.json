@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "start:nodemon": "nodemon --watch src --watch views --exec babel-node src/server.js",
+    "start": "nodemon --watch src --watch views --exec babel-node src/server.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "build": "webpack --config webpack.config.js",    
     "test": "jest",
     "test:watch": "jest --watch"
   },
