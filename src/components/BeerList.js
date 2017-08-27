@@ -22,7 +22,10 @@ export default class BeerList extends Component {
     return (
       <ListGroup>
         { this.state.beers.map((beer, index) =>
-          <ListGroupItem key={beer.id} onClick={() => this.toggleFavorite(index)}>{ beer.name }{ beer.favorite ? ' <3' : ''}</ListGroupItem>,
+          <ListGroupItem
+            key={beer.id}
+            onClick={() => this.toggleFavorite(index)}>{ beer.name }{ beer.favorite ? ' <3' : ''}
+          </ListGroupItem>,
         ) }
       </ListGroup>
     );
