@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: './src/browser.js',
-  output: {     // pakollinen!
+  output: {     // required!
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
@@ -14,6 +14,10 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   }

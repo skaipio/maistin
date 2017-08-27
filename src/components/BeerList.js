@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
 export default class BeerList extends Component {
   constructor({ beers }) {
@@ -19,11 +20,11 @@ export default class BeerList extends Component {
 
   render() {
     return (
-      <ul>
+      <ListGroup>
         { this.state.beers.map((beer, index) =>
-          <li key={beer.id} onClick={() => this.toggleFavorite(index)}>{ beer.name }{ beer.favorite ? ' <3' : ''}</li>,
+          <ListGroupItem key={beer.id} onClick={() => this.toggleFavorite(index)}>{ beer.name }{ beer.favorite ? ' <3' : ''}</ListGroupItem>,
         ) }
-      </ul>
+      </ListGroup>
     );
   }
 }
