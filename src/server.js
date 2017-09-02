@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
     message: 'Welcome to Maistin!',
     content: beerList,
     appData: {
-      beers: beers
-    }
+      beers,
+    },
   });
 });
 

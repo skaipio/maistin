@@ -14,7 +14,7 @@ export default class BeerList extends Component {
     const beers = JSON.parse(JSON.stringify(this.state.beers));
     beers[beerIndex].favorite = !beers[beerIndex].favorite;
     this.setState({
-      beers: beers,
+      beers,
     });
   }
 
@@ -22,10 +22,12 @@ export default class BeerList extends Component {
     return (
       <ListGroup>
         { this.state.beers.map((beer, index) =>
-          <ListGroupItem
+          (<ListGroupItem
             key={beer.id}
-            onClick={() => this.toggleFavorite(index)}>{ beer.name }{ beer.favorite ? ' <3' : ''}
-          </ListGroupItem>,
+            onClick={() => this.toggleFavorite(index)}
+          >
+            { beer.name }{ beer.favorite ? ' <3' : ''}
+          </ListGroupItem>),
         ) }
       </ListGroup>
     );

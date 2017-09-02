@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import BeerList from './components/BeerList';
 import 'bootstrap/dist/css/bootstrap.css';
+import BeerList from './components/BeerList';
+
 
 const targetElement = document.getElementById('main');
 const appDataJson = document.getElementById('appData').innerHTML;

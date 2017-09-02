@@ -2,5 +2,12 @@
   "extends": "airbnb",
   "rules": {
     "react/jsx-filename-extension": 0
+  },
+  "globals": {
+    "document": true,
+    "describe": true,
+    "expect": true,
+    "beforeEach": true,
+    "it": true
   }
 }

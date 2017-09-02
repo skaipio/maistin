@@ -11,11 +11,11 @@ describe('beerService', () => {
   describe('#getBeers', () => {
     it('returns an array of objects with fields id, name and favorite', () => {
       const beers = getBeers();
-      beers.forEach(beer => {
+      beers.forEach((beer) => {
         expect(beer).toHaveProperty('id');
         expect(beer).toHaveProperty('name');
-        expect(beer).toHaveProperty('favorite');        
-      })     
+        expect(beer).toHaveProperty('favorite');
+      });
     });
   });
 });
