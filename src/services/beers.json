@@ -7,4 +7,9 @@
   "id": 2,
   "name": "Nutty Stout",
   "favorite": true
+},
+{
+  "id": 3,
+  "name": "</script><script>console.error('Muahaha!')</script>",
+  "favorite": false
 }]

@@ -18,9 +18,9 @@ app.get('/', (req, res) => {
     title: 'Maistin',
     message: 'Welcome to Maistin!',
     content: beerList,
-    appProps: JSON.stringify({
-      beers: beers,
-    })
+    appData: {
+      beers: beers
+    }
   });
 });
 

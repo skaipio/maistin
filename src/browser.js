@@ -4,4 +4,7 @@ import BeerList from './components/BeerList';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const targetElement = document.getElementById('main');
-ReactDOM.render(<BeerList beers={APP_PROPS.beers} />, targetElement);
+const appDataJson = document.getElementById('appData').innerHTML;
+const appData = JSON.parse(unescape(appDataJson));
+
+ReactDOM.render(<BeerList beers={appData.beers} />, targetElement);

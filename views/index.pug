@@ -4,7 +4,7 @@ html
   body
     h1= message
     div(id="main")
-      | !{content}
-    script.
-      const APP_PROPS = !{appProps}
+      != content
+    script(id="appData")
+      != escape(JSON.stringify(appData))
     script(src="../dist/bundle.js")
