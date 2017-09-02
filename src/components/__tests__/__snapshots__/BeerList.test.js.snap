@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BeerList /> snapshot of beer list matches 1`] = `
+<ul
+  className="list-group"
+>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    Lovely Lager
+    
+  </li>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    Sound Stout
+     &lt;3
+  </li>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    Pounding Porter
+    
+  </li>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    Awesome Ale
+     &lt;3
+  </li>
+</ul>
+`;
